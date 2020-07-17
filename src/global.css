@@ -1,0 +1,35 @@
+
+@font-face {
+  font-family: "ralewaythin";
+  src:
+    url("./raleway-variablefont_wght-webfont.woff") format("woff2"),
+    url("./raleway-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'ralewaythin', Arial, sans-serif;
+  background-color: white;
+}
+
+.body-container {
+  background-color: #fafafa;
+  margin: 50px;
+  padding: 50px 60px;
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-text {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.logo-subtext::first-letter {
+  text-transform: uppercase;
+}
