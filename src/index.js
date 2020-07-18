@@ -1,7 +1,7 @@
-import 'css-reset-and-normalize';
-import './global.css';
-import createElementContainer from './styles/element_container';
+import createElementContainer from './elements/element_container';
 import Header from './components/header';
+import 'css-reset-and-normalize';
+import './styles/global.css';
 
 const bodyContainer = () => {
   const bodyContainerElement = createElementContainer('div', [

@@ -1,5 +1,5 @@
-import createElementContainer from '../styles/element_container';
-import linkedListElement from '../styles/linked_list_element';
+import createElementContainer from '../elements/element_container';
+import linkedListElement from '../elements/linked_list_element';
 
 const Header = () => {
   const navBar = document.createElement('nav');
