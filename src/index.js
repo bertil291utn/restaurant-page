@@ -3,7 +3,9 @@ import './global.css';
 import createElementContainer from './styles/elementContainer';
 
 const bodyContainer = () => {
-  const bodyContainerElement = createElementContainer('div', ['body-container']);
+  const bodyContainerElement = createElementContainer('div', [
+    'body-container',
+  ]);
 
   // NAVBAR SECTION
   const navBar = document.createElement('nav');
@@ -12,23 +14,31 @@ const bodyContainer = () => {
   navBar.appendChild(header);
   // logo container
   const logoContainer = createElementContainer('div', ['logo-container']);
-
-  const logoText = createElementContainer();
-  logoText.classList.add('logo-text');
+  const logoText = createElementContainer('p', ['logo-text']);
   logoText.innerHTML = 'sushi hub';
-  const logoSubText = document.createElement('p');
-  logoSubText.classList.add('logo-subtext');
+  const logoSubText = createElementContainer('p', ['logo-subtext']);
   logoSubText.innerHTML = 'ancient foods to doorstep';
   logoContainer.appendChild(logoText, logoSubText);
-  // right link
-  const rightLink = document.createElement('ul');
-  rightLink.classList.add('right-links', 'slide-fading-short-animation');
-  // const linkChefs = document.childElementCount('li');
-  // const linkSpecials = document.childElementCount('li');
-  // const linkDelivery = document.childElementCount('li');
-  // linkChefs;
+  // right links
+  const rightLinks = createElementContainer('ul', [
+    'right-links',
+    'slide-fading-short-animation',
+  ]);
+  const listChefs = createElementContainer('li');
+  const linkChefs = createElementContainer('a');
+  linkChefs.innerHTML = 'Chefs';
+  listChefs.append(linkChefs);
+  const listSpecial = createElementContainer('li');
+  const linkSpecial = createElementContainer('a');
+  linkSpecial.innerHTML = 'Special';
+  listSpecial.append(linkSpecial);
+  const listDelivery = createElementContainer('li');
+  const linkDelivery = createElementContainer('a');
+  linkDelivery.innerHTML = 'Delivery';
+  listDelivery.append(linkDelivery);
+  rightLinks.append(listChefs, listSpecial, listDelivery);
 
-  header.append(logoContainer);
+  header.append(logoContainer, rightLinks);
 
   bodyContainerElement.append(navBar);
   return bodyContainerElement;
