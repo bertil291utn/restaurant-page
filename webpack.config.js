@@ -5,20 +5,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
-  devtool: 'inline-source-map',
-  plugins: [
-    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    new HtmlWebPackPlugin({
-      title: 'Sushi Restaurant',
-    }),
-  ],
   output: {
-    filename: 'main.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    port: 9000,
   },
   module: {
     rules: [
@@ -45,5 +34,17 @@ module.exports = {
         },
       },
     ],
+  },
+  devtool: 'inline-source-map',
+  plugins: [
+    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
+    new HtmlWebPackPlugin({
+      template: './public/index.html',
+      filename: './index.html',
+    }),
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    port: 9000,
   },
 };
