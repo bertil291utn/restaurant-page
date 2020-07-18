@@ -108,3 +108,58 @@ button:focus {
   top: -10%;
   left: 90%;
 }
+
+.slide-fading-animation {
+  -webkit-animation: fading 1.5s ease-in-out;
+  -moz-animation: fading 1.5s ease-in-out;
+  -o-animation: fading 1.5s ease-in-out;
+  animation: fading 1.5s ease-in-out;
+}
+
+.slide-fading-short-animation {
+  -webkit-animation: fading-short 0.9s ease-in;
+  -moz-animation: fading-short 0.9s ease-in;
+  -o-animation: fading-short 0.9s ease-in;
+  animation: fading-short 0.9s ease-in;
+}
+
+.slide-fading-shorter-animation {
+  -webkit-animation: fading-shorter 0.9s ease-in;
+  -moz-animation: fading-shorter 0.9s ease-in;
+  -o-animation: fading-shorter 0.9s ease-in;
+  animation: fading-shorter 0.9s ease-in;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+    transform: translate(1000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fading-short {
+  0% {
+    opacity: 0;
+    transform: translate(200px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fading-shorter {
+  0% {
+    transform: translate(50px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
