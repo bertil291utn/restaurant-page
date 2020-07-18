@@ -11,4 +11,4 @@ const bodyContainer = () => {
   bodyContainerElement.append(navBar);
   return bodyContainerElement;
 };
-document.body.appendChild(bodyContainer());
+document.getElementById('root').appendChild(bodyContainer());
