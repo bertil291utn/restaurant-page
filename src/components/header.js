@@ -5,11 +5,14 @@ const Header = () => {
   const navBar = document.createElement('nav');
   const header = createElementContainer('header', ['nav-container', 'd-flex']);
   const logoContainer = createElementContainer('div', ['logo-container']);
+  const logoLink = createElementContainer('a');
+  logoLink.href = '/';
   const logoText = createElementContainer('p', ['logo-text']);
   logoText.innerHTML = 'sushi hub';
   const logoSubText = createElementContainer('p', ['logo-subtext']);
   logoSubText.innerHTML = 'ancient foods to doorstep';
-  logoContainer.append(logoText, logoSubText);
+  logoLink.append(logoText, logoSubText);
+  logoContainer.append(logoLink);
   const rightLinks = linkedListElement(
     [
       { innertext: 'Chefs' },
