@@ -53,7 +53,7 @@ a {
   font-weight: 700;
 }
 
-.right-links li {
+.right-links li:not(:last-child) {
   margin-right: 50px;
 }
 
