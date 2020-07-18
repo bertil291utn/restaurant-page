@@ -1,7 +1,7 @@
-const elementContainer = (name, classesToAdd, id) => {
-  const elementContainer = document.createElement(name);
-  if (classesToAdd !== undefined) elementContainer.classList.add(...classesToAdd);
-  if (id !== undefined) elementContainer.setAttribute('id', id);
-  return elementContainer;
+const createElementContainer = (name, classesToAdd, id) => {
+  const createElementContainer = document.createElement(name);
+  if (classesToAdd !== undefined) createElementContainer.classList.add(...classesToAdd);
+  if (id !== undefined) createElementContainer.setAttribute('id', id);
+  return createElementContainer;
 };
-export default elementContainer;
+export default createElementContainer;

@@ -1,19 +1,19 @@
 import 'css-reset-and-normalize';
 import './global.css';
-import elementContainer from './styles/elementContainer';
+import createElementContainer from './styles/elementContainer';
 
 const bodyContainer = () => {
-  const bodyContainerElement = elementContainer('div', ['body-container']);
+  const bodyContainerElement = createElementContainer('div', ['body-container']);
 
   // NAVBAR SECTION
   const navBar = document.createElement('nav');
-  const header = elementContainer('header', ['nav-container', 'd-flex']);
+  const header = createElementContainer('header', ['nav-container', 'd-flex']);
 
   navBar.appendChild(header);
   // logo container
-  const logoContainer = elementContainer('div', ['logo-container']);
+  const logoContainer = createElementContainer('div', ['logo-container']);
 
-  const logoText = document.createElement('p');
+  const logoText = createElementContainer();
   logoText.classList.add('logo-text');
   logoText.innerHTML = 'sushi hub';
   const logoSubText = document.createElement('p');
