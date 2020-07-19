@@ -8,7 +8,7 @@ const linkedListElement = (linkObjectArray, classesToAdd) => {
     const link = createElementContainer('a');
     link.innerHTML = linkObject.innertext;
     link.href = linkObject.href || '#';
-    link.onclick = linkObject.link;
+    link.onclick = linkObject.link();
     list.append(link);
     ulElement.appendChild(list);
   });

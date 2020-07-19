@@ -1,5 +1,5 @@
-import createElementContainer from '../elements/element_container';
-import linkedListElement from '../elements/linked_list_element';
+import createElementContainer from './element_container';
+import linkedListElement from './linked_list_element';
 import Home from '../pages/home';
 import About from '../pages/about';
 
@@ -17,9 +17,9 @@ const Header = () => {
   logoContainer.append(logoLink);
   const rightLinks = linkedListElement(
     [
-      { innertext: 'Home', link: Home() },
-      { innertext: 'About', link: About() },
-      { innertext: 'Special', link: About() },
+      { innertext: 'Home', link: Home },
+      { innertext: 'About', link: About },
+      { innertext: 'Special', link: About },
     ],
     ['right-links', 'slide-fading-short-animation']
   );

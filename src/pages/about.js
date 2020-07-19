@@ -1,4 +1,4 @@
-import createElementContainer from '../elements/element_container';
+import createElementContainer from '../components/element_container';
 import sushiDishImage from '../assets/sushimi-dish-shadowed.png';
 
 const About = () => {

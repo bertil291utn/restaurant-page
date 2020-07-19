@@ -1,4 +1,4 @@
-import createElementContainer from '../elements/element_container';
+import createElementContainer from '../components/element_container';
 import imgHero from '../assets/sushi-roll_hero-section.png';
 
 const Home = () => {
