@@ -1,5 +1,7 @@
 import createElementContainer from '../elements/element_container';
 import linkedListElement from '../elements/linked_list_element';
+import Home from '../pages/home';
+import About from '../pages/about';
 
 const Header = () => {
   const navBar = document.createElement('nav');
@@ -15,11 +17,11 @@ const Header = () => {
   logoContainer.append(logoLink);
   const rightLinks = linkedListElement(
     [
-      { innertext: 'Chefs' },
-      { innertext: 'Special' },
-      { innertext: 'Delivery' },
+      { innertext: 'Home', link: Home() },
+      { innertext: 'About', link: About() },
+      { innertext: 'Special', link: About() },
     ],
-    ['right-links', 'slide-fading-short-animation'],
+    ['right-links', 'slide-fading-short-animation']
   );
 
   header.append(logoContainer, rightLinks);
