@@ -161,7 +161,7 @@ button:focus {
   margin-top: 25%;
 }
 
-.about-section {
+.about-content {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
 }
