@@ -3,7 +3,10 @@ import imgHero from '../assets/sushi-roll_hero-section.png';
 
 const Home = () => {
   const section = createElementContainer('section', ['hero']);
-  const heroContent = createElementContainer('div', ['hero-content']);
+  const heroContent = createElementContainer('div', [
+    'hero-content',
+    'p-relative',
+  ]);
   section.append(heroContent);
   const fadingAnimation = createElementContainer('div', [
     'slide-fading-animation',
@@ -26,7 +29,7 @@ const Home = () => {
   fadingAnimation.append(heroButtons);
   const imgHeroElement = createElementContainer(
     'img',
-    ['slide-fading-shorter-animation'],
+    ['slide-fading-shorter-animation', 'p-absolute'],
     'sushi-hero',
   );
   imgHeroElement.src = imgHero;

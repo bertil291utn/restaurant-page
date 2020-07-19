@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800;900&display=swap');
 
+/* GLOBAL VARIABLES */
+
 body {
   font-family: 'Raleway', Arial, sans-serif;
   background-color: white;
@@ -8,8 +10,8 @@ body {
 }
 
 .body-container {
-  background-color: #fafafa;
-  margin: 60px;
+  background-color: #f8f8f8;
+  margin: 60px 80px;
   padding: 60px 90px;
   border-radius: 40px;
 }
@@ -27,13 +29,33 @@ a {
   display: flex;
 }
 
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.title-section {
+  font-size: 2.5vw;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.underline {
+  border-bottom: 1px solid #f14402;
+}
+
+/* NAV BAR */
+
 .nav-container {
   align-items: center;
   justify-content: space-between;
 }
 
 .logo-text {
-  font-size: 2em;
+  font-size: 3.5vw;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -49,7 +71,7 @@ a {
 
 .right-links {
   display: inline-flex;
-  font-size: 1.2em;
+  font-size: 1.5vw;
   font-weight: 700;
 }
 
@@ -57,14 +79,15 @@ a {
   margin-right: 50px;
 }
 
+/* HERO SECTION */
+
 .hero {
-  position: relative;
   margin: 7em 0 5em;
   width: 65%;
 }
 
 .hero p {
-  font-size: 3.25em;
+  font-size: 4vw;
   font-weight: 800;
   text-transform: capitalize;
   line-height: 1.25em;
@@ -75,7 +98,7 @@ a {
 }
 
 button {
-  width: 12em;
+  width: 17vw;
   height: 2.7em;
   border-radius: 15px;
   background-color: white;
@@ -90,7 +113,7 @@ button:focus {
 }
 
 #explore-button {
-  margin: 0 40px;
+  margin: 0 4vw;
 }
 
 .primary-button {
@@ -102,10 +125,9 @@ button:focus {
 }
 
 #sushi-hero {
-  position: absolute;
-  width: 100%;
-  max-width: 700px;
-  top: -10%;
+  width: 150%;
+  max-width: 800px;
+  top: -10vh;
   left: 90%;
 }
 
@@ -129,6 +151,35 @@ button:focus {
   -o-animation: fading-shorter 0.9s ease-in;
   animation: fading-shorter 0.9s ease-in;
 }
+
+/* ABOUT */
+.about {
+  margin: 15vw 0;
+}
+
+.about-restaurant {
+  margin-top: 25%;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+#japanese-dish {
+  width: 90%;
+  top: -15vw;
+  left: -25%;
+}
+
+.about-restaurant-text {
+  margin-top: 1.4em;
+  line-height: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* KEYFRAMES */
 
 @keyframes fading {
   0% {
