@@ -6,10 +6,11 @@ const removeElements = () => {
 };
 
 const renderElements = (element) => {
+  removeElements();
   const main = document.getElementById('main');
   const mainContent = createElementContainer('div', undefined, 'main-content');
   mainContent.append(element);
   main.append(mainContent);
 };
 
-export { removeElements, renderElements };
+export default renderElements;
