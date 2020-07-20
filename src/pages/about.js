@@ -1,6 +1,7 @@
 import createElementContainer from '../components/element_container';
 import sushiDishImage from '../assets/sushimi-dish-shadowed.png';
 import imageElement from '../components/element_image';
+import elementTitle from '../components/element_title';
 
 const About = () => {
   const aboutSection = createElementContainer('section', [
@@ -24,9 +25,12 @@ const About = () => {
     'slide-fading-right-animation',
   ]);
   aboutContent.append(aboutRestaurant);
-  const titleElem = createElementContainer('h3', ['title-section']);
+  const titleElem = elementTitle(
+    '<span class="underline">about</span> restaurant',
+    ['title-section']
+  );
+
   aboutRestaurant.append(titleElem);
-  titleElem.innerHTML = '<span class="underline">about</span> restaurant';
   const aboutRestText = createElementContainer('div', [
     'about-restaurant-text',
   ]);

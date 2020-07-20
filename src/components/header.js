@@ -2,6 +2,7 @@ import createElementContainer from './element_container';
 import linkedListElement from './linked_list_element';
 import Home from '../pages/home';
 import About from '../pages/about';
+import Special from '../pages/special';
 
 const Header = () => {
   const navBar = document.createElement('nav');
@@ -19,7 +20,7 @@ const Header = () => {
     [
       { innertext: 'Home', link: Home },
       { innertext: 'About', link: About },
-      { innertext: 'Special', link: About },
+      { innertext: 'Special', link: Special },
     ],
     ['right-links', 'slide-fading-short-animation'],
   );
