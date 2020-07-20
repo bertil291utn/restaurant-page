@@ -88,6 +88,7 @@ a {
 .hero {
   margin: 7em 0 5em;
   width: 65%;
+  height: 40vw;
 }
 
 .hero p {
@@ -158,7 +159,7 @@ button:focus {
 
 /* ABOUT */
 .about {
-  margin: 15vw 0 10vw;
+  height: 47vw;
 }
 
 .about-restaurant {
@@ -185,10 +186,6 @@ button:focus {
 
 /* SPECIALS */
 
-.specials {
-  margin-top: 25vw;
-}
-
 .specials .title-section {
   text-align: center;
   left: -6vw;
@@ -208,6 +205,32 @@ button:focus {
   height: auto;
   left: -16vw;
   top: 16vw;
+}
+
+.delicious-content {
+  height: 60vw;
+}
+
+.specials-carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5vw;
+  margin-top: 5vw;
+}
+
+.special-item {
+  text-align: center;
+}
+
+.special-item img {
+  width: 100%;
+  height: auto;
+}
+
+.special-item p {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.7vw;
 }
 
 /* KEYFRAMES */
