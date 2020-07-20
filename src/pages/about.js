@@ -43,7 +43,6 @@ const About = () => {
     aboutRestText.append(pElem);
   });
   aboutRestaurant.append(aboutRestText);
-
   return aboutSection;
 };
 export default About;

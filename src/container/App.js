@@ -3,21 +3,16 @@ import '../styles/global.css';
 import createElementContainer from '../components/element_container';
 import Header from '../components/header';
 import Home from '../pages/home';
-import About from '../pages/about';
-import displayPage from '../functions/display';
 
 const App = () => {
   const bodyContainerElement = createElementContainer('div', [
     'body-container',
   ]);
   const navBar = Header();
-  const main = createElementContainer('main');
-  // check with switch to change the main page
-  // first check with hide and show
-  // then could try deleting all inner element inerhtml=''
-  const pageToAppend = displayPage();
-  main.append(Home());
-  main.append(About());
+  const main = createElementContainer('main', undefined, 'main');
+  const mainContent = createElementContainer('div', undefined, 'main-content');
+  mainContent.append(Home());
+  main.append(mainContent);
 
   bodyContainerElement.append(navBar, main);
   return bodyContainerElement;
