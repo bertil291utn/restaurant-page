@@ -1,5 +1,7 @@
 import createElementContainer from '../components/element_container';
 import imgHero from '../assets/sushi-roll_hero-section.png';
+import elementButton from '../components/element_button';
+import imageElement from '../components/element_image';
 
 const Home = () => {
   const section = createElementContainer('section', ['hero']);
@@ -13,27 +15,26 @@ const Home = () => {
   ]);
   heroContent.append(fadingAnimation);
   const paragraphHero = createElementContainer('p');
-  paragraphHero.innerHTML = 'japanese tradition and the best ingredients with modern touches';
+  paragraphHero.innerHTML =
+    'japanese tradition and the best ingredients with modern touches';
   fadingAnimation.append(paragraphHero);
   const heroButtons = createElementContainer('div', ['hero-buttons']);
-  const exploreButton = createElementContainer(
-    'button',
+  const exploreButton = elementButton(
+    'Explore',
     ['primary-button'],
-    'explore-button',
+    'explore-button'
   );
-  exploreButton.innerHTML = 'Explore';
   heroButtons.append(exploreButton);
-  const menuButton = createElementContainer('button');
-  menuButton.innerHTML = 'Menu';
+  const menuButton = elementButton('Menu');
   heroButtons.append(menuButton);
   fadingAnimation.append(heroButtons);
-  const imgHeroElement = createElementContainer(
-    'img',
+  const imgHeroElement = imageElement(
+    imgHero,
     ['slide-fading-shorter-animation', 'p-absolute'],
     'sushi-hero',
+    'sushi hero section'
   );
-  imgHeroElement.src = imgHero;
-  imgHeroElement.alt = 'sushi hero section';
+
   heroContent.append(imgHeroElement);
   return section;
 };
