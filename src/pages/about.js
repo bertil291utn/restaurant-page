@@ -1,5 +1,6 @@
 import createElementContainer from '../components/element_container';
 import sushiDishImage from '../assets/sushimi-dish-shadowed.png';
+import imageElement from '../components/element_image';
 
 const About = () => {
   const aboutSection = createElementContainer('section', [
@@ -8,18 +9,20 @@ const About = () => {
   ]);
   const aboutContent = createElementContainer('div', ['about-content']);
   aboutSection.append(aboutContent);
-  const sushiDishElement = createElementContainer(
-    'img',
+  const sushiDishElement = imageElement(
+    sushiDishImage,
     ['p-absolute'],
-    'japanese-dish'
+    'japanese-dish',
+    'japanese dish'
   );
-  sushiDishElement.src = sushiDishImage;
-  sushiDishElement.alt = 'japanese dish';
 
   aboutContent.append(sushiDishElement);
   const emptyDiv = createElementContainer('div');
   aboutContent.append(emptyDiv);
-  const aboutRestaurant = createElementContainer('div', ['about-restaurant']);
+  const aboutRestaurant = createElementContainer('div', [
+    'about-restaurant',
+    'slide-fading-right-animation',
+  ]);
   aboutContent.append(aboutRestaurant);
   const titleElem = createElementContainer('h3', ['title-section']);
   aboutRestaurant.append(titleElem);
