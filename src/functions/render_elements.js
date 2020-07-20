@@ -1,16 +1,14 @@
-import createElementContainer from '../components/element_container';
-
 const removeElements = () => {
-  const mainContent = document.getElementById('main-content');
-  mainContent.parentNode.removeChild(mainContent);
+  const mainElement = document.getElementById('main');
+  while (mainElement.firstChild) {
+    mainElement.removeChild(mainElement.lastChild);
+  }
 };
 
 const renderElements = (element) => {
+  const mainElement = document.getElementById('main');
   removeElements();
-  const main = document.getElementById('main');
-  const mainContent = createElementContainer('div', undefined, 'main-content');
-  mainContent.append(element);
-  main.append(mainContent);
+  mainElement.append(element);
 };
 
 export default renderElements;

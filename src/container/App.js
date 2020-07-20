@@ -10,9 +10,7 @@ const App = () => {
   ]);
   const navBar = Header();
   const main = createElementContainer('main', undefined, 'main');
-  const mainContent = createElementContainer('div', undefined, 'main-content');
-  mainContent.append(Home());
-  main.append(mainContent);
+  main.append(Home());
 
   bodyContainerElement.append(navBar, main);
   return bodyContainerElement;
