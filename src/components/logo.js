@@ -10,7 +10,7 @@ const LogoContainer = () => {
   link.append(logoText);
 
   const logoSubText = createElementContainer('p', ['logo-subtext']);
-  logoSubText.innerHTML = 'ancient foods to doorstep';
+  logoSubText.innerHTML = 'ancient cuisine to doorstep';
   link.append(logoSubText);
 
   return LogoContainer;
