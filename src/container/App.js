@@ -3,6 +3,7 @@ import '../styles/global.css';
 import createElementContainer from '../components/element_container';
 import Header from '../components/header';
 import Home from '../pages/home';
+import Footer from '../pages/footer';
 
 const App = () => {
   const bodyContainerElement = createElementContainer('div', [
@@ -12,7 +13,7 @@ const App = () => {
   const main = createElementContainer('main', undefined, 'main');
   main.append(Home());
 
-  bodyContainerElement.append(navBar, main);
+  bodyContainerElement.append(navBar, main, Footer());
   return bodyContainerElement;
 };
 
