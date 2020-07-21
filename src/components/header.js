@@ -13,7 +13,7 @@ const Header = () => {
     [
       { innertext: 'Home', link: Home },
       { innertext: 'About', link: About },
-      { innertext: 'Special', link: Special },
+      { innertext: 'Specials', link: Special },
     ],
     ['right-links', 'slide-fading-short-animation']
   );
