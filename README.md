@@ -20,7 +20,7 @@
 
 ## Getting Started
 
-In order to start with this project you need the next:
+In order to start this project, you will need:
 
 1. Get a copy of this project [this repository :blue_book:](https://github.com/bertil291utn/restaurant-page.git)
 
