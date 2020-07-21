@@ -4,6 +4,7 @@ In this project, we have to use ES6 modules to solve the restaurant web page fol
 
 <div align="center"><img src="https://user-images.githubusercontent.com/24902525/88004482-b8282800-cacc-11ea-85c7-3357ab18209f.png" alt="image" width="900" /></div>
 
+**Note:** Just large screens (1024px to up)
 
 
 ## Built With 
@@ -41,6 +42,7 @@ Deployed on [GitHub Pages](https://pages.github.com/)
 ## Improvements
 
 Features we are going to add to this app:
+- Approach a Responsive Web Design
 - Add more information about us
 - Specials with more variety of dishes
 - Add links to each page
