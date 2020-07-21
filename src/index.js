@@ -1,1 +1,3 @@
-alert('Webpack is working');
+import App from './container/App';
+
+document.getElementById('content').appendChild(App());

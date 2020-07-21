@@ -1,0 +1,371 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800;900&display=swap');
+
+/* GLOBAL VARIABLES */
+:root {
+  --secondary-color: #f14402;
+}
+
+body {
+  font-family: 'Raleway', Arial, sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.body-container {
+  background-color: #f8f8f8;
+  margin: 60px 80px;
+  padding: 60px 90px;
+  border-radius: 40px;
+  height: 90vw;
+}
+
+.height-home-body {
+  height: 90vw;
+}
+
+.height-about-body {
+  height: 103vw;
+}
+
+.height-specials-body {
+  height: 157vw;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.title-section {
+  font-size: 3vw;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.underline {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+/* NAV BAR */
+
+.nav-container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-size: 2.65vw;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.logo-subtext {
+  font-weight: 400;
+  font-size: 0.88em;
+}
+
+.logo-subtext::first-letter {
+  text-transform: uppercase;
+}
+
+.right-links {
+  display: inline-flex;
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.right-links li:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* HERO SECTION */
+
+.hero {
+  margin-top: 7em;
+  width: 65%;
+  height: 40vw;
+}
+
+.hero p {
+  font-size: 4vw;
+  font-weight: 800;
+  text-transform: capitalize;
+  line-height: 1.25em;
+}
+
+.hero-buttons {
+  margin-top: 3em;
+}
+
+button {
+  width: 17vw;
+  height: 2.7em;
+  border-radius: 15px;
+  background-color: white;
+  border: 2.5px solid #000;
+  font-weight: bold;
+  font-size: 1.12em;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+#explore-button {
+  margin: 0 4vw;
+}
+
+.primary-button {
+  background-color: #000;
+  color: #fff;
+  -webkit-box-shadow: 0 15px 20px #777777b8;
+  -moz-box-shadow: 0 15px 20px #777777b8;
+  box-shadow: 0 15px 20px #777777b8;
+}
+
+#sushi-hero {
+  width: 150%;
+  max-width: 800px;
+  top: -10vh;
+  left: 90%;
+}
+
+/* ANIMATION */
+
+.slide-fading-animation {
+  -webkit-animation: fading 1.5s ease-in-out;
+  -moz-animation: fading 1.5s ease-in-out;
+  -o-animation: fading 1.5s ease-in-out;
+  animation: fading 1.5s ease-in-out;
+}
+
+.slide-fading-short-animation {
+  -webkit-animation: fading-short 0.9s ease-in;
+  -moz-animation: fading-short 0.9s ease-in;
+  -o-animation: fading-short 0.9s ease-in;
+  animation: fading-short 0.9s ease-in;
+}
+
+.slide-fading-shorter-animation {
+  -webkit-animation: fading-shorter 0.9s ease-in;
+  -moz-animation: fading-shorter 0.9s ease-in;
+  -o-animation: fading-shorter 0.9s ease-in;
+  animation: fading-shorter 0.9s ease-in;
+}
+
+.slide-fading-right-animation {
+  -webkit-animation: fading-right 0.8s ease-in;
+  -moz-animation: fading-right 0.8s ease-in;
+  -o-animation: fading-right 0.8s ease-in;
+  animation: fading-right 0.8s ease-in;
+}
+
+/* ABOUT */
+
+.about {
+  height: 47vw;
+  margin-top: 15vw;
+}
+
+.about-restaurant {
+  margin-top: 25%;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+#japanese-dish {
+  width: 90%;
+  top: -15vw;
+  left: -25%;
+}
+
+.about-restaurant-text {
+  margin-top: 1.4em;
+  line-height: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* SPECIALS */
+
+.specials {
+  margin: 7vw 0;
+}
+
+.specials .title-section {
+  text-align: center;
+  left: -6vw;
+  right: -6vw;
+  line-height: 3.5vw;
+}
+
+.delicious-title {
+  top: 9vw;
+  font-size: 16vw;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+#sushi-dish {
+  width: 105vw;
+  height: auto;
+  left: -16vw;
+  top: 16vw;
+}
+
+.delicious-content {
+  height: 60vw;
+}
+
+.specials-images {
+  text-align: center;
+}
+
+.specials-carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5vw;
+  margin-top: 5vw;
+}
+
+.special-item {
+  text-align: center;
+}
+
+.special-item img {
+  width: 100%;
+  height: auto;
+}
+
+.special-item p {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.7vw;
+}
+
+.specials-images button {
+  margin-top: 7vw;
+}
+
+/* FOOTER */
+
+.footer-container {
+  border-top: 2px solid var(--secondary-color);
+  margin-bottom: 4vw;
+}
+
+.footer-container .logo-container {
+  margin: 4vw 0;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 5vw;
+  margin-top: 5vw;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3vw;
+}
+
+.download-app-title {
+  text-transform: capitalize;
+  font-size: 1.8vw;
+  margin-bottom: 1.8vw;
+}
+
+.download-app img {
+  width: 75%;
+  margin: 0.5vw 0;
+}
+
+.subtitle-footer {
+  font-size: 1.8vw;
+  margin-bottom: 3vw;
+  font-weight: 700;
+}
+
+.footer-content p {
+  font-size: 0.9vw;
+  font-weight: 700;
+  margin-bottom: 1.5vw;
+  text-transform: capitalize;
+}
+
+#footer-sashimi {
+  width: 25%;
+  right: -11vw;
+  top: 21vw;
+}
+
+/* KEYFRAMES */
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+    transform: translate(1000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fading-short {
+  0% {
+    opacity: 0;
+    transform: translate(200px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fading-shorter {
+  0% {
+    transform: translate(50px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fading-right {
+  0% {
+    opacity: 0;
+    transform: translate(-200px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
