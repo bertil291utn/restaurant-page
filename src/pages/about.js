@@ -14,7 +14,7 @@ const About = () => {
     sushiDishImage,
     ['p-absolute'],
     'japanese-dish',
-    'japanese dish'
+    'japanese dish',
   );
 
   aboutContent.append(sushiDishElement);
@@ -27,7 +27,7 @@ const About = () => {
   aboutContent.append(aboutRestaurant);
   const titleElem = elementTitle(
     '<span class="underline">about</span> restaurant',
-    ['title-section']
+    ['title-section'],
   );
 
   aboutRestaurant.append(titleElem);

@@ -79,7 +79,7 @@ const Footer = () => {
     footerSashimiElem,
     ['p-absolute'],
     'footer-sashimi',
-    'footer sashimi'
+    'footer sashimi',
   );
   footerContainer.append(footerSashimiImg);
   return Footer;

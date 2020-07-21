@@ -11,7 +11,7 @@ const Special = () => {
   Special.append(deliciousContent);
   const sectionMotto = elementTitle(
     'a perfect combination of passion, service orientation, craftsmanship and knowledge',
-    ['title-section', 'p-absolute']
+    ['title-section', 'p-absolute'],
   );
   deliciousContent.append(sectionMotto);
   const largeDeliciousTitle = createElementContainer('p', [
@@ -24,14 +24,14 @@ const Special = () => {
     sushiDishElement,
     ['p-absolute'],
     'sushi-dish',
-    'sushi-dish'
+    'sushi-dish',
   );
   deliciousContent.append(sushiDishImage);
   const specialImages = createElementContainer('div', ['specials-images']);
   Special.append(specialImages);
   const sectionSubtitle = elementTitle(
     '<span class="underline">specials</span>',
-    ['title-section']
+    ['title-section'],
   );
   specialImages.append(sectionSubtitle);
   const specialCarousel = createElementContainer('div', ['specials-carousel']);

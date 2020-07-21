@@ -15,14 +15,13 @@ const Home = () => {
   ]);
   heroContent.append(fadingAnimation);
   const paragraphHero = createElementContainer('p');
-  paragraphHero.innerHTML =
-    'japanese tradition and the best ingredients with modern touches';
+  paragraphHero.innerHTML = 'japanese tradition and the best ingredients with modern touches';
   fadingAnimation.append(paragraphHero);
   const heroButtons = createElementContainer('div', ['hero-buttons']);
   const exploreButton = elementButton(
     'Explore',
     ['primary-button'],
-    'explore-button'
+    'explore-button',
   );
   heroButtons.append(exploreButton);
   const menuButton = elementButton('Menu');
@@ -32,7 +31,7 @@ const Home = () => {
     imgHero,
     ['slide-fading-shorter-animation', 'p-absolute'],
     'sushi-hero',
-    'sushi hero section'
+    'sushi hero section',
   );
 
   heroContent.append(imgHeroElement);

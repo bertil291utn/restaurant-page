@@ -15,7 +15,7 @@ const Header = () => {
       { innertext: 'About', link: About },
       { innertext: 'Specials', link: Special },
     ],
-    ['right-links', 'slide-fading-short-animation']
+    ['right-links', 'slide-fading-short-animation'],
   );
 
   header.append(logoContainer(), rightLinks);
